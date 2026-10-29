@@ -1,0 +1,79 @@
+/* ==========================================================
+   styles.css - hanya penyesuaian warna di atas Bootstrap 5
+   (layout, spacing, tabel, form, dll. sudah ditangani Bootstrap)
+   ========================================================== */
+
+:root {
+    --teal: #008784;
+    --teal-dark: #006b69;
+    --teal-darker: #006663;
+    --teal-light: #d6eeed;
+
+    /* Warna link bawaan Bootstrap -> teal */
+    --bs-link-color: #008784;
+    --bs-link-color-rgb: 0, 135, 132;
+    --bs-link-hover-color: #006663;
+    --bs-link-hover-color-rgb: 0, 102, 99;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header & footer */
+.site-header {
+    background-color: var(--teal);
+    box-shadow: 0 4px 6px rgba(0, 135, 132, 0.2);
+}
+
+.site-footer {
+    background-color: var(--teal-dark);
+}
+
+/* Judul tiap section */
+.section-title {
+    color: var(--teal-dark);
+    --bs-border-color: var(--teal);
+}
+
+h3,
+h4 {
+    color: #2c3e50;
+}
+
+/* Tombol utama */
+.btn-primary {
+    --bs-btn-bg: #008784;
+    --bs-btn-border-color: #008784;
+    --bs-btn-hover-bg: #006663;
+    --bs-btn-hover-border-color: #006663;
+    --bs-btn-active-bg: #006663;
+    --bs-btn-active-border-color: #006663;
+    --bs-btn-disabled-bg: #008784;
+    --bs-btn-disabled-border-color: #008784;
+}
+
+/* Fokus input/select/textarea */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 0.25rem rgba(0, 135, 132, 0.25);
+}
+
+/* Header tabel */
+.table-teal {
+    --bs-table-bg: #008784;
+    --bs-table-color: #fff;
+    --bs-table-border-color: #006b69;
+}
+
+/* Blok kode */
+.code-block {
+    background-color: var(--teal-light);
+    color: #15181d;
+}
+
+:not(pre) > code {
+    color: var(--teal-dark);
+}
